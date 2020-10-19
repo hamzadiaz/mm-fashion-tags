@@ -10,9 +10,10 @@ inputImage="http://www" # will come from user
 
 
 
+
 def main():
 
-    #DOWNLOAD INPUTiMAGE -->IMAGES/
+    #DOWNLOAD INPUTIMAGE -->IMAGES/ 10MB
     if os.path.isdir(args.input_path):
         fp = glob.glob(os.path.join(args.input_path, '**.jpg'))
         img_tensor = load_img_to_tensor(fp, im_size=(256, 256))

@@ -5,7 +5,9 @@ Install libraries:
     conda install pytorch torchvision cpuonly -c pytorch
     pip install mmcv-full==latest+torch1.6.0+cpu -f https://download.openmmlab.com/mmcv/dist/index.html
     conda install numpy
-
+	git clone https://github.com/open-mmlab/mmfashion
+	cd mmfashion
+	python setup.py install
 ---
 
 Create folder names `models` and paste models in it.
@@ -21,9 +23,7 @@ You can use both.
     python main.py --input-path images/ --fine --coarse
     python main.py --input-path images/demo3.jpg --fine
     python main.py --input-path images/demo1.jpg --coarse
-	git clone https://github.com/open-mmlab/mmfashion
-	cd mmfashion
-	python setup.py install
+
 	
 
 # What is the purpose of the program
